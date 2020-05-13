@@ -1,0 +1,106 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://addons/teeb.text_effects/resources/Cuss.tres" type="RichTextEffect" id=1]
+[ext_resource path="res://addons/teeb.text_effects/demo/RichTextLabel.tscn" type="PackedScene" id=2]
+[ext_resource path="res://addons/teeb.text_effects/resources/UwU.tres" type="RichTextEffect" id=3]
+[ext_resource path="res://addons/teeb.text_effects/resources/Rain.tres" type="RichTextEffect" id=4]
+[ext_resource path="res://addons/teeb.text_effects/resources/Heart.tres" type="RichTextEffect" id=5]
+[ext_resource path="res://addons/teeb.text_effects/resources/ColorMod.tres" type="RichTextEffect" id=6]
+[ext_resource path="res://addons/teeb.text_effects/resources/Number.tres" type="RichTextEffect" id=7]
+[ext_resource path="res://addons/teeb.text_effects/resources/Woo.tres" type="RichTextEffect" id=8]
+[ext_resource path="res://addons/teeb.text_effects/resources/Sparkle.tres" type="RichTextEffect" id=9]
+[ext_resource path="res://addons/teeb.text_effects/resources/Nervous.tres" type="RichTextEffect" id=10]
+[ext_resource path="res://addons/teeb.text_effects/resources/Jump.tres" type="RichTextEffect" id=11]
+[ext_resource path="res://addons/teeb.text_effects/resources/L33T.tres" type="RichTextEffect" id=12]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="cuss" parent="." instance=ExtResource( 2 )]
+margin_left = 48.0
+margin_top = 13.0
+margin_right = 1027.0
+margin_bottom = 55.0
+bbcode_text = "[color=gray]cuss:[/color] What the [cuss]heck[/cuss] are you [cuss]fuckers[/cuss] talking about?"
+text = "cuss: What the heck are you fuckers talking about?"
+custom_effects = [ ExtResource( 6 ), ExtResource( 1 ), ExtResource( 5 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 10 ), ExtResource( 7 ), ExtResource( 4 ), ExtResource( 9 ), ExtResource( 3 ), ExtResource( 8 ), null, null, null, null, null ]
+
+[node name="heart" parent="." instance=ExtResource( 2 )]
+margin_left = 32.499
+margin_top = 45.8829
+margin_right = 1011.5
+margin_bottom = 87.8829
+bbcode_text = "[color=gray]heart:[/color] [heart]I love you so much!!![/heart]."
+text = "heart: I love you so much!!!."
+custom_effects = [ ExtResource( 6 ), ExtResource( 1 ), ExtResource( 5 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 10 ), ExtResource( 7 ), ExtResource( 4 ), ExtResource( 9 ), ExtResource( 3 ), ExtResource( 8 ), null, null, null, null, null ]
+
+[node name="jump" parent="." instance=ExtResource( 2 )]
+margin_left = 47.6654
+margin_top = 82.8734
+margin_right = 1026.67
+margin_bottom = 124.873
+bbcode_text = "[color=gray]jump:[/color] [jump angle=180]Jump up![/jump] [jump]Jump down. [/jump][jump angle=45]To at a 45![/jump] [jump angle=270]To the right![/jump]"
+text = "jump: Jump up! Jump down. To at a 45! To the right!"
+custom_effects = [ ExtResource( 6 ), ExtResource( 1 ), ExtResource( 5 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 10 ), ExtResource( 7 ), ExtResource( 4 ), ExtResource( 9 ), ExtResource( 3 ), ExtResource( 8 ), null, null, null, null, null ]
+
+[node name="l33t" parent="." instance=ExtResource( 2 )]
+margin_left = 47.6654
+margin_top = 125.873
+margin_right = 1026.67
+margin_bottom = 167.873
+bbcode_text = "[color=gray]l33t:[/color] [l33t]Only the top hackers in the biz can read this.[/l33t]"
+text = "l33t: Only the top hackers in the biz can read this."
+custom_effects = [ ExtResource( 6 ), ExtResource( 1 ), ExtResource( 5 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 10 ), ExtResource( 7 ), ExtResource( 4 ), ExtResource( 9 ), ExtResource( 3 ), ExtResource( 8 ), null, null, null, null, null ]
+
+[node name="nervous" parent="." instance=ExtResource( 2 )]
+margin_left = 0.773407
+margin_top = 165.763
+margin_right = 979.773
+margin_bottom = 207.763
+bbcode_text = "[color=gray]nervous:[/color] [nervous]Oh, u-um, I was wo-wondering... if maybe...[/nervous]"
+text = "nervous: Oh, u-um, I was wo-wondering... if maybe..."
+custom_effects = [ ExtResource( 6 ), ExtResource( 1 ), ExtResource( 5 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 10 ), ExtResource( 7 ), ExtResource( 4 ), ExtResource( 9 ), ExtResource( 3 ), ExtResource( 8 ), null, null, null, null, null ]
+
+[node name="number" parent="." instance=ExtResource( 2 )]
+margin_left = 15.7734
+margin_top = 202.763
+margin_right = 994.773
+margin_bottom = 244.763
+bbcode_text = "[color=gray]number:[/color] [number color=cyan]I'll give you 10 coconuts for 20 shells.[/number]"
+text = "number: I'll give you 10 coconuts for 20 shells."
+custom_effects = [ ExtResource( 6 ), ExtResource( 1 ), ExtResource( 5 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 10 ), ExtResource( 7 ), ExtResource( 4 ), ExtResource( 9 ), ExtResource( 3 ), ExtResource( 8 ), null, null, null, null, null ]
+
+[node name="rain" parent="." instance=ExtResource( 2 )]
+margin_left = 48.7734
+margin_top = 244.763
+margin_right = 1027.77
+margin_bottom = 286.763
+bbcode_text = "[color=gray]rain:[/color] [rain]Rain, rain, go away. Come again later.[/rain]"
+text = "rain: Rain, rain, go away. Come again later."
+custom_effects = [ ExtResource( 6 ), ExtResource( 1 ), ExtResource( 5 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 10 ), ExtResource( 7 ), ExtResource( 4 ), ExtResource( 9 ), ExtResource( 3 ), ExtResource( 8 ), null, null, null, null, null ]
+
+[node name="sparkle" parent="." instance=ExtResource( 2 )]
+margin_left = 0.773407
+margin_top = 285.763
+margin_right = 979.773
+margin_bottom = 327.763
+bbcode_text = "[color=gray]sparkle:[/color] You aquired the [sparkle c1=darkred c2=black]Evil Sword[/sparkle] and the [sparkle c1=blue c2=aqua]Good Sword[/sparkle]."
+text = "sparkle: You aquired the Evil Sword and the Good Sword."
+custom_effects = [ ExtResource( 6 ), ExtResource( 1 ), ExtResource( 5 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 10 ), ExtResource( 7 ), ExtResource( 4 ), ExtResource( 9 ), ExtResource( 3 ), ExtResource( 8 ), null, null, null, null, null ]
+
+[node name="uwu" parent="." instance=ExtResource( 2 )]
+margin_left = 64.7734
+margin_top = 321.763
+margin_right = 1043.77
+margin_bottom = 363.763
+bbcode_text = "[color=gray]uwu:[/color] [uwu]Leave me alone, I am trying me hardest.[/uwu]"
+text = "uwu: Leave me alone, I am trying me hardest."
+custom_effects = [ ExtResource( 6 ), ExtResource( 1 ), ExtResource( 5 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 10 ), ExtResource( 7 ), ExtResource( 4 ), ExtResource( 9 ), ExtResource( 3 ), ExtResource( 8 ), null, null, null, null, null ]
+
+[node name="woo" parent="." instance=ExtResource( 2 )]
+margin_left = 66.0535
+margin_top = 357.919
+margin_right = 1045.05
+margin_bottom = 399.919
+bbcode_text = "[color=gray]woo:[/color] You were all like \"[woo]Ooh, look at how smart I am.[/woo]\""
+text = "woo: You were all like \"Ooh, look at how smart I am.\""
+custom_effects = [ ExtResource( 6 ), ExtResource( 1 ), ExtResource( 5 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 10 ), ExtResource( 7 ), ExtResource( 4 ), ExtResource( 9 ), ExtResource( 3 ), ExtResource( 8 ), null, null, null, null, null ]

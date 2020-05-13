@@ -1,0 +1,7 @@
+[gd_resource type="RichTextEffect" load_steps=2 format=2]
+
+[ext_resource path="res://addons/teeb.text_effects/effects/UwU.gd" type="Script" id=1]
+
+[resource]
+resource_name = "UwU"
+script = ExtResource( 1 )

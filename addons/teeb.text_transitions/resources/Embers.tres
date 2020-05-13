@@ -1,0 +1,7 @@
+[gd_resource type="RichTextEffect" load_steps=2 format=2]
+
+[ext_resource path="res://addons/teeb.text_transitions/transitions/Embers.gd" type="Script" id=1]
+
+[resource]
+resource_name = "Embers"
+script = ExtResource( 1 )

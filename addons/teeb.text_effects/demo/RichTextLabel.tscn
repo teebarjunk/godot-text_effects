@@ -1,0 +1,26 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://addons/teeb.text_effects/demo/demo_font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://addons/teeb.text_effects/resources/Cuss.tres" type="RichTextEffect" id=2]
+[ext_resource path="res://addons/teeb.text_effects/resources/UwU.tres" type="RichTextEffect" id=3]
+[ext_resource path="res://addons/teeb.text_effects/resources/Rain.tres" type="RichTextEffect" id=4]
+[ext_resource path="res://addons/teeb.text_effects/resources/Heart.tres" type="RichTextEffect" id=5]
+[ext_resource path="res://addons/teeb.text_effects/resources/ColorMod.tres" type="RichTextEffect" id=6]
+[ext_resource path="res://addons/teeb.text_effects/resources/Number.tres" type="RichTextEffect" id=7]
+[ext_resource path="res://addons/teeb.text_effects/resources/Woo.tres" type="RichTextEffect" id=8]
+[ext_resource path="res://addons/teeb.text_effects/resources/Sparkle.tres" type="RichTextEffect" id=9]
+[ext_resource path="res://addons/teeb.text_effects/resources/Nervous.tres" type="RichTextEffect" id=10]
+[ext_resource path="res://addons/teeb.text_effects/resources/Jump.tres" type="RichTextEffect" id=11]
+[ext_resource path="res://addons/teeb.text_effects/resources/L33T.tres" type="RichTextEffect" id=12]
+
+[node name="RichTextLabel" type="RichTextLabel"]
+margin_right = 200.0
+margin_bottom = 100.0
+custom_fonts/normal_font = ExtResource( 1 )
+bbcode_enabled = true
+bbcode_text = "[color=gray]a:[/color] b"
+text = "a: b"
+custom_effects = [ ExtResource( 6 ), ExtResource( 2 ), ExtResource( 5 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 10 ), ExtResource( 7 ), ExtResource( 4 ), ExtResource( 9 ), ExtResource( 3 ), ExtResource( 8 ), null, null, null, null, null ]
+__meta__ = {
+"_edit_use_anchors_": false
+}

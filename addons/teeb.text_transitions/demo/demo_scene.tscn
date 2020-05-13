@@ -1,0 +1,158 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://addons/teeb.text_transitions/demo/RichTextLabel.tscn" type="PackedScene" id=1]
+[ext_resource path="res://addons/teeb.text_transitions/Debugger.gd" type="Script" id=2]
+[ext_resource path="res://addons/teeb.text_transitions/resources/Prickle.tres" type="RichTextEffect" id=3]
+[ext_resource path="res://addons/teeb.text_transitions/resources/Redacted.tres" type="RichTextEffect" id=4]
+[ext_resource path="res://addons/teeb.text_transitions/resources/WFC.tres" type="RichTextEffect" id=5]
+[ext_resource path="res://addons/teeb.text_transitions/resources/Console.tres" type="RichTextEffect" id=6]
+[ext_resource path="res://addons/teeb.text_transitions/resources/Word.tres" type="RichTextEffect" id=7]
+[ext_resource path="res://addons/teeb.text_transitions/resources/Bounce.tres" type="RichTextEffect" id=8]
+[ext_resource path="res://addons/teeb.text_transitions/resources/Embers.tres" type="RichTextEffect" id=9]
+
+[sub_resource type="GDScript" id=1]
+script/source = "tool
+extends \"res://addons/teeb.text_transitions/transitions/TransitionBase.gd\"
+
+
+# Syntax: [glide][/glide]
+var bbcode = \"glide\"
+
+
+const A1 = ord(\"<\")
+const A2 = ord(\">\")
+
+
+var _move_left = false
+
+
+func _process_custom_fx(char_fx):
+	var t = get_t(char_fx)
+	
+	if char_fx.character == A1:
+		_move_left = true
+		char_fx.color.a = 0.0
+		return true
+	elif char_fx.character == A2:
+		_move_left = false
+		char_fx.color.a = 0.0
+		return true
+	else:
+		char_fx.color.a = t
+	
+	var s = sin(char_fx.elapsed_time) * .5 + .5
+	if _move_left:
+		char_fx.offset.y -= 33
+		char_fx.color.a = s
+	else:
+		char_fx.color.a = 1.0 - s
+		
+#	if _move_left:
+#		char_fx.offset.y = 16.0 - t * 16.0
+#	else:
+#		char_fx.offset.y = t * 16.0 - 16.0
+	return true
+"
+
+[sub_resource type="RichTextEffect" id=2]
+resource_name = "Glide"
+script = SubResource( 1 )
+
+[node name="Node2D" type="Control"]
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+time = 1.0
+
+[node name="bounce" parent="." instance=ExtResource( 1 )]
+margin_left = 36.5651
+margin_top = 2.21606
+margin_right = 1045.57
+margin_bottom = 129.216
+bbcode_enabled = true
+bbcode_text = "[color=gray]bounce:[/color] [bounce]A long time ago, in a far away place...[/bounce]"
+text = "bounce: A long time ago, in a far away place..."
+custom_effects = [ ExtResource( 8 ), ExtResource( 6 ), ExtResource( 9 ), SubResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 7 ), null, null ]
+length = 16.0
+reverse = false
+animation_time = 0.5
+
+[node name="console" parent="." instance=ExtResource( 1 )]
+margin_left = 22.345
+margin_top = 36.1859
+margin_right = 1031.34
+margin_bottom = 163.186
+bbcode_enabled = true
+bbcode_text = "[color=gray]console:[/color] [console id=console]A long time ago, in a far away place...[/console]"
+text = "console: A long time ago, in a far away place..."
+custom_effects = [ ExtResource( 8 ), ExtResource( 6 ), ExtResource( 9 ), SubResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 7 ), null, null ]
+id = "console"
+length = 1.0
+reverse = false
+animation_time = 0.5
+
+[node name="embers" parent="." instance=ExtResource( 1 )]
+margin_left = 39.4702
+margin_top = 71.3033
+margin_right = 1048.47
+margin_bottom = 198.303
+bbcode_enabled = true
+bbcode_text = "[color=gray]embers:[/color] [embers id=embers]A long time ago, in a far away place...[/embers]"
+text = "embers: A long time ago, in a far away place..."
+custom_effects = [ ExtResource( 8 ), ExtResource( 6 ), ExtResource( 9 ), SubResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 7 ), null, null ]
+id = "embers"
+reverse = false
+animation_time = 0.5
+
+[node name="prickle" parent="." instance=ExtResource( 1 )]
+margin_left = 25.5704
+margin_top = 111.007
+margin_right = 1034.57
+margin_bottom = 238.007
+bbcode_enabled = true
+bbcode_text = "[color=gray]prickle:[/color] [prickle id=prickle]A long time ago, in a far away place...[/prickle]"
+text = "prickle: A long time ago, in a far away place..."
+custom_effects = [ ExtResource( 8 ), ExtResource( 6 ), ExtResource( 9 ), SubResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 7 ), null, null ]
+id = "prickle"
+length = 16.0
+reverse = false
+animation_time = 0.5
+
+[node name="redacted" parent="." instance=ExtResource( 1 )]
+margin_left = 10.1619
+margin_top = 148.323
+margin_right = 1019.16
+margin_bottom = 275.323
+bbcode_enabled = true
+bbcode_text = "[color=gray]redacted:[/color] [redacted id=redacted]A long time ago, in a far away place...[/redacted]"
+text = "redacted: A long time ago, in a far away place..."
+id = "redacted"
+reverse = false
+animation_time = 0.5
+
+[node name="wfc" parent="." instance=ExtResource( 1 )]
+margin_left = 91.1592
+margin_top = 187.824
+margin_right = 1100.15
+margin_bottom = 314.824
+bbcode_enabled = true
+bbcode_text = "[color=gray]wfc:[/color] [wfc id=wfc]A long time ago, in a far away place...[/wfc]"
+text = "wfc: A long time ago, in a far away place..."
+id = "wfc"
+length = 32.0
+reverse = false
+animation_time = 0.5
+
+[node name="word" parent="." instance=ExtResource( 1 )]
+margin_left = 74.5387
+margin_top = 227.713
+margin_right = 1083.53
+margin_bottom = 354.713
+bbcode_enabled = true
+bbcode_text = "[color=gray]word:[/color] [word id=word]A long time ago, in a far away place...[/word]"
+text = "word: A long time ago, in a far away place..."
+id = "word"
+length = 4.0
+reverse = false
+animation_time = 0.5
