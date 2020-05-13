@@ -1,8 +1,4 @@
 
-## About
-
-Some *RichTextLabel* effects for use in the Godot game engine.
-
 Released as is. You may need to figure things out yourself, but I included demos.
 
 **addons/teeb.text_effects**: Simple bbcode elements to use in *RichTextLabel*s.
