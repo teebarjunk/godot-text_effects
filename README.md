@@ -17,7 +17,7 @@ Make a feature request of any text effects you'd like to see, and I'll try to im
 
 ## Effects
 
-[![Effect Preview](readme/effect_preview.png "Effect Preview")](readme/effect_preview.webm)
+[![Effect Preview](readme/effect_preview.png "Effect Preview")](https://streamable.com/ev4k4a)
 
 The effects be used like any other bbcode.
 
@@ -75,7 +75,7 @@ Hey... [nervous]muh-maybe could I...[/nervous] have the [sparkle c1=red c2=yello
 
 ## RichTextTransition Node
 
-[![Transition Preview](readme/trans_preview.png "Transition Preview")](readme/trans_preview.webm)
+[![Transition Preview](readme/trans_preview.png "Transition Preview")](https://streamable.com/p18yu4)
 
 Warning: This is a hacky, wonky implementation of text transition effects. But it works well enough for me.
 
