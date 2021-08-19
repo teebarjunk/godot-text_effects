@@ -1,4 +1,12 @@
 
+Effects Preview:
+
+https://user-images.githubusercontent.com/18387401/130072369-90f99c72-358e-41fe-af4d-cfea32665741.mp4
+
+Transition Preview:
+
+https://user-images.githubusercontent.com/18387401/130072410-a80b2545-3a13-4704-af9b-000e3816de35.mp4
+
 Released as is. You may need to figure things out yourself, but I included demos.
 
 **addons/teeb.text_effects**: Simple bbcode elements to use in *RichTextLabel*s.
