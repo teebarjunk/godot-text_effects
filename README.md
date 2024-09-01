@@ -1,3 +1,7 @@
+> [!IMPORTANT]
+> A better version for Godot 4+ [here](https://github.com/chairfull/GodotRichTextLabel2)
+
+
 
 Effects Preview:
 
